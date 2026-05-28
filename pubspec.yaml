@@ -1,0 +1,47 @@
+name: basic_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4     # ← Yangi qo‘shildi (eng so‘nggi versiya)
+
+# ====================== APP ICON CONFIGURATION ======================
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.PNG"     # ← Icon yo‘lingizni shu yerga yozing
+  remove_alpha_ios: true
+  web:
+    generate: false
+  macos:
+    generate: false
+  windows:
+    generate: false
+  linux:
+    generate: false
+
+# Flutter section
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/dice-1.png
+    - assets/images/dice-2.png
+    - assets/images/dice-3.png
+    - assets/images/dice-4.png
+    - assets/images/dice-5.png
+    - assets/images/dice-6.png
+    - assets/icon/icon.PNG          # ← Iconni ham assets ga qo‘shing
